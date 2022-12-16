@@ -123,15 +123,16 @@ main .row {
 }
 
 .brand span {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .name span {
     font-weight: bold;
+    font-size: 14px;
 }
 
 .price span {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .new-price {
