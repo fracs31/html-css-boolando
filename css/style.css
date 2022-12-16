@@ -115,3 +115,35 @@ main .row {
     height: 15%;
     background-color: wheat;
 }
+
+.brand {
+    background-color: cadetblue;
+}
+
+.brand span {
+    font-size: 14px;
+}
+
+.name {
+    background-color: aqua;
+}
+
+.name span {
+    font-weight: bold;
+}
+
+.price {
+    background-color: darkorchid;
+}
+
+.price span {
+    font-size: 14px;
+}
+
+.new-price {
+    color: red;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
