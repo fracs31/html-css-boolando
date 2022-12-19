@@ -21,7 +21,7 @@ header {
     color: white;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
 }
 
 header .row {
@@ -94,8 +94,9 @@ main .row {
     width: 50px;
     height: 50px;
     position: absolute;
-    left: 250px;
+    right: 0px;
     top: 10px;
+    line-height: 50px;
     text-align: center;
     background-color: white;
 }
