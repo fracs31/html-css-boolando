@@ -5,34 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/ae23fa42a2.js" crossorigin="anonymous"></script>
     <title>Boolando</title>
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="main-header">
         <!-- Container -->
         <div class="container">
-            <!-- Riga -->
-            <div class="row">
-                <!-- Navbar -->
-                <nav class="col">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <!-- Generi -->
+                <div class="gender">
                     <!-- Lista -->
                     <ul>
-                        <li><a href="#">Donna</a></li>
-                        <li><a href="#">Uomo</a></li>
-                        <li><a href="#">Bambini</a></li>
+                        <li>Donna</li>
+                        <li>Uomo</li>
+                        <li>Bambini</li>
                     </ul>
-                </nav>
+                </div>
                 <!-- Logo -->
-                <div class="col"><img src="./img/boolean-logo.png" alt="Logo"></div>
-                <!-- Opzioni -->
-                <div class="col">A A A</div>
-            </div>
+                <div class="logo">
+                    <!-- Immagine -->
+                    <img src="./img/boolean-logo.png" alt="Logo">
+                </div>
+                <!-- Azioni -->
+                <div class="actions">
+                    <!-- Lista -->
+                    <ul>
+                        <li><i class="fa-regular fa-user"></i></li>
+                        <li><i class="fa-regular fa-heart"></i></li>
+                        <li><i class="fa-solid fa-bag-shopping"></i></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
-
     <!-- Main -->
-    <main>
+    <main class="main-content">
         <!-- Container -->
         <div class="container">
             <!-- Riga -->
@@ -41,28 +51,47 @@
                 <div class="col">
                     <!-- Carta -->
                     <div class="card">
-                        <!-- Contenitore immagine -->
-                        <div class="img">
+                        <!-- Parte superiore della carta -->
+                        <div class="card-body">
                             <!-- Immagini -->
-                            <img class="not-hover-img" src="./img/1.webp" alt="1">
-                            <img class="hover-img" src="./img/1b.webp" alt="1b">
-                            <!-- Aggiungi ai preferiti -->
-                            <div class="favorite"><span>&hearts;</span></div>
+                            <div class="images">
+                                <!-- Immagine davanti -->
+                                <img class="front-img" src="./img/1.webp" alt="1a">
+                                <!-- Immagine dietro -->
+                                <img class="back-img" src="./img/1b.webp" alt="1b">
+                            </div>
+                            <!-- Cuore -->
+                            <div class="heart">
+                                <span>&hearts;</span>
+                            </div>
                             <!-- Informazioni -->
                             <div class="info">
                                 <!-- Sconto -->
-                                <div class="discount"><span>-50%</span></div>
+                                <div class="info-box red">
+                                    <p>-50%</p>
+                                </div>
                                 <!-- Sostenibilità -->
-                                <div class="sustain"><span>Sostenibilità</span></div>
+                                <div class="info-box green">
+                                    <p>Sostenibilità</p>
+                                </div>
                             </div>
                         </div>
-                        <!-- Descrizione -->
-                        <div class="desc">
-                            <div class="brand"><span>Levi's</span></div>
-                            <div class="name"><span>RELAXED FIT TEE UNISEX</span></div>
+                        <!-- Parte inferiore della carta -->
+                        <div class="card-footer">
+                            <!-- Brand -->
+                            <div class="brand">
+                                <p>Levi's</p>
+                            </div>
+                            <!-- Titolo -->
+                            <div class="title">
+                                <p>Relaxed Fit Tee Unisex</p>
+                            </div>
+                            <!-- Prezzi -->
                             <div class="price">
-                                <span class="new-price">14,99 €</span>
-                                <span class="old-price">29,99 €</span>
+                                <!-- Prezzo attuale -->
+                                <p class="actual-price">14,99€</p>
+                                <!-- Prezzo vecchio -->
+                                <p class="old-price">29,99€</p>
                             </div>
                         </div>
                     </div>
@@ -71,26 +100,43 @@
                 <div class="col">
                     <!-- Carta -->
                     <div class="card">
-                        <!-- Contenitore immagine -->
-                        <div class="img">
-                            <!-- Immagine -->
-                            <img class="not-hover-img" src="./img/2.webp" alt="2">
-                            <img class="hover-img" src="./img/2b.webp" alt="2b">
-                            <!-- Aggiungi ai preferiti -->
-                            <div class="favorite"><span>&hearts;</span></div>
+                        <!-- Parte superiore della carta -->
+                        <div class="card-body">
+                            <!-- Immagini -->
+                            <div class="images">
+                                <!-- Immagine davanti -->
+                                <img class="front-img" src="./img/2.webp" alt="2a">
+                                <!-- Immagine dietro -->
+                                <img class="back-img" src="./img/2b.webp" alt="2b">
+                            </div>
+                            <!-- Cuore -->
+                            <div class="heart">
+                                <span>&hearts;</span>
+                            </div>
                             <!-- Informazioni -->
                             <div class="info">
                                 <!-- Sconto -->
-                                <div class="discount"><span>-30%</span></div>
+                                <div class="info-box red">
+                                    <p>-30%</p>
+                                </div>
                             </div>
                         </div>
-                        <!-- Descrizione -->
-                        <div class="desc">
-                            <div class="brand"><span>Guess</span></div>
-                            <div class="name"><span>ROSES TEE</span></div>
+                        <!-- Parte inferiore della carta -->
+                        <div class="card-footer">
+                            <!-- Brand -->
+                            <div class="brand">
+                                <p>Guess</p>
+                            </div>
+                            <!-- Titolo -->
+                            <div class="title">
+                                <p>Roses Tee</p>
+                            </div>
+                            <!-- Prezzi -->
                             <div class="price">
-                                <span class="new-price">20,99 €</span>
-                                <span class="old-price">29,99 €</span>
+                                <!-- Prezzo attuale -->
+                                <p class="actual-price">20,99€</p>
+                                <!-- Prezzo vecchio -->
+                                <p class="old-price">29,99€</p>
                             </div>
                         </div>
                     </div>
@@ -99,56 +145,94 @@
                 <div class="col">
                     <!-- Carta -->
                     <div class="card">
-                        <!-- Contenitore immagine -->
-                        <div class="img">
-                            <!-- Immagine -->
-                            <img class="not-hover-img" src="./img/3.webp" alt="3">
-                            <img class="hover-img" src="./img/3b.webp" alt="3b">
-                            <!-- Aggiungi ai preferiti -->
-                            <div class="favorite"><span>&hearts;</span></div>
+                        <!-- Parte superiore della carta -->
+                        <div class="card-body">
+                            <!-- Immagini -->
+                            <div class="images">
+                                <!-- Immagine davanti -->
+                                <img class="front-img" src="./img/3.webp" alt="3a">
+                                <!-- Immagine dietro -->
+                                <img class="back-img" src="./img/3b.webp" alt="3b">
+                            </div>
+                            <!-- Cuore -->
+                            <div class="heart">
+                                <span>&hearts;</span>
+                            </div>
                             <!-- Informazioni -->
                             <div class="info">
                                 <!-- Sconto -->
-                                <div class="discount"><span>-30%</span></div>
+                                <div class="info-box red">
+                                    <p>-30%</p>
+                                </div>
                             </div>
                         </div>
-                        <!-- Descrizione -->
-                        <div class="desc">
-                            <div class="brand"><span>Come Zucchero Filato</span></div>
-                            <div class="name"><span>VOGLIA DI COLORI PASTELLO</span></div>
+                        <!-- Parte inferiore della carta -->
+                        <div class="card-footer">
+                            <!-- Brand -->
+                            <div class="brand">
+                                <p>Come Zucchero Filato</p>
+                            </div>
+                            <!-- Titolo -->
+                            <div class="title">
+                                <p>Voglia di colori pastello</p>
+                            </div>
+                            <!-- Prezzi -->
                             <div class="price">
-                                <span class="new-price">129,99 €</span>
-                                <span class="old-price">184,99 €</span>
+                                <!-- Prezzo attuale -->
+                                <p class="actual-price">129,99€</p>
+                                <!-- Prezzo vecchio -->
+                                <p class="old-price">184,99€</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <!-- Colonna -->
                 <div class="col">
                     <!-- Carta -->
                     <div class="card">
-                        <!-- Contenitore immagine -->
-                        <div class="img">
-                            <!-- Immagine -->
-                            <img class="not-hover-img" src="./img/4.webp" alt="4">
-                            <img class="hover-img" src="./img/4b.webp" alt="4b">
-                            <!-- Aggiungi ai preferiti -->
-                            <div class="favorite"><span>&hearts;</span></div>
+                        <!-- Parte superiore della carta -->
+                        <div class="card-body">
+                            <!-- Immagini -->
+                            <div class="images">
+                                <!-- Immagine davanti -->
+                                <img class="front-img" src="./img/4.webp" alt="4a">
+                                <!-- Immagine dietro -->
+                                <img class="back-img" src="./img/4b.webp" alt="4b">
+                            </div>
+                            <!-- Cuore -->
+                            <div class="heart">
+                                <span>&hearts;</span>
+                            </div>
                             <!-- Informazioni -->
                             <div class="info">
                                 <!-- Sconto -->
-                                <div class="discount"><span>-50%</span></div>
+                                <div class="info-box red">
+                                    <p>-50%</p>
+                                </div>
                                 <!-- Sostenibilità -->
-                                <div class="sustain"><span>Sostenibilità</span></div>
+                                <div class="info-box green">
+                                    <p>Sostenibilità</p>
+                                </div>
                             </div>
                         </div>
-                        <!-- Descrizione -->
-                        <div class="desc">
-                            <div class="brand"><span>Levi's</span></div>
-                            <div class="name"><span>TEE UNISEX</span></div>
+                        <!-- Parte inferiore della carta -->
+                        <div class="card-footer">
+                            <!-- Brand -->
+                            <div class="brand">
+                                <p>Levi's</p>
+                            </div>
+                            <!-- Titolo -->
+                            <div class="title">
+                                <p>Tee Unisex</p>
+                            </div>
+                            <!-- Prezzi -->
                             <div class="price">
-                                <span class="new-price">14,99 €</span>
-                                <span class="old-price">29,99 €</span>
+                                <!-- Prezzo attuale -->
+                                <p class="actual-price">14,99€</p>
+                                <!-- Prezzo vecchio -->
+                                <p class="old-price">29,99€</p>
                             </div>
                         </div>
                     </div>
@@ -157,24 +241,38 @@
                 <div class="col">
                     <!-- Carta -->
                     <div class="card">
-                        <!-- Contenitore immagine -->
-                        <div class="img">
-                            <!-- Immagine -->
-                            <img class="not-hover-img" src="./img/5.webp" alt="5">
-                            <img class="hover-img" src="./img/5b.webp" alt="5b">
-                            <!-- Aggiungi ai preferiti -->
-                            <div class="favorite"><span>&hearts;</span></div>
+                        <!-- Parte superiore della carta -->
+                        <div class="card-body">
+                            <!-- Immagini -->
+                            <div class="images">
+                                <!-- Immagine davanti -->
+                                <img class="front-img" src="./img/5.webp" alt="5a">
+                                <!-- Immagine dietro -->
+                                <img class="back-img" src="./img/5b.webp" alt="5b">
+                            </div>
+                            <!-- Cuore -->
+                            <div class="heart">
+                                <span>&hearts;</span>
+                            </div>
                             <!-- Informazioni -->
                             <div class="info">
-                            
+                                
                             </div>
                         </div>
-                        <!-- Descrizione -->
-                        <div class="desc">
-                            <div class="brand"><span>Maya Deluxe</span></div>
-                            <div class="name"><span>STRIPE BODICE</span></div>
+                        <!-- Parte inferiore della carta -->
+                        <div class="card-footer">
+                            <!-- Brand -->
+                            <div class="brand">
+                                <p>Maya Deluxe</p>
+                            </div>
+                            <!-- Titolo -->
+                            <div class="title">
+                                <p>Stripe Bodice</p>
+                            </div>
+                            <!-- Prezzi -->
                             <div class="price">
-                                <span class="new-price">99,99 €</span>
+                                <!-- Prezzo attuale -->
+                                <p class="actual-price">99,99€</p>
                             </div>
                         </div>
                     </div>
@@ -183,25 +281,41 @@
                 <div class="col">
                     <!-- Carta -->
                     <div class="card">
-                        <!-- Contenitore immagine -->
-                        <div class="img">
-                            <!-- Immagine -->
-                            <img class="not-hover-img" src="./img/6.webp" alt="6">
-                            <img class="hover-img" src="./img/6b.webp" alt="6b">
-                            <!-- Aggiungi ai preferiti -->
-                            <div class="favorite"><span>&hearts;</span></div>
+                        <!-- Parte superiore della carta -->
+                        <div class="card-body">
+                            <!-- Immagini -->
+                            <div class="images">
+                                <!-- Immagine davanti -->
+                                <img class="front-img" src="./img/6.webp" alt="6a">
+                                <!-- Immagine dietro -->
+                                <img class="back-img" src="./img/6b.webp" alt="6b">
+                            </div>
+                            <!-- Cuore -->
+                            <div class="heart">
+                                <span>&hearts;</span>
+                            </div>
                             <!-- Informazioni -->
                             <div class="info">
-                                <!-- Sostenibilità -->
-                                <div class="sustain"><span>Sostenibilità</span></div>
+                                <!-- Sconto -->
+                                <div class="info-box green">
+                                    <p>Sostenibilità</p>
+                                </div>
                             </div>
                         </div>
-                        <!-- Descrizione -->
-                        <div class="desc">
-                            <div class="brand"><span>Espirit</span></div>
-                            <div class="name"><span>MAGLIONE - BLACK</span></div>
+                        <!-- Parte inferiore della carta -->
+                        <div class="card-footer">
+                            <!-- Brand -->
+                            <div class="brand">
+                                <p>Espirit</p>
+                            </div>
+                            <!-- Titolo -->
+                            <div class="title">
+                                <p>Maglione - Black</p>
+                            </div>
+                            <!-- Prezzi -->
                             <div class="price">
-                                <span class="new-price">29,99 €</span>
+                                <!-- Prezzo attuale -->
+                                <p class="actual-price">29,99€</p>
                             </div>
                         </div>
                     </div>
@@ -210,32 +324,37 @@
         </div>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="page-footer">
         <!-- Container -->
         <div class="container">
-            <!-- Riga -->
-            <div class="row">
-                <!-- Colonna -->
-                <div class="col">
-                    <!-- Copyright -->
-                    <h2>Boolando s.r.l.</h2>
-                    <span>Informazioni legali</span>
-                    <span>Informazioni sulla privacy</span>
-                    <span>Diritto di recesso</span>
+            <!-- Informazione contenute nel footer -->
+            <div class="footer-info">
+                <!-- Azienda -->
+                <div class="company">
+                    <!-- Sottotitolo -->
+                    <h4>Boolando s.r.l</h4>
+                    <!-- Lista -->
+                    <ul>
+                        <li>Informazioni legali</li>
+                        <li>Informativa sulla privacy</li>
+                        <li>Diritto di recesso</li>
+                    </ul>
                 </div>
-                <!-- Colonna -->
-                <div class="col">
-                    <!-- Social -->
-                    <h2>Trovaci anche su</h2>
-                    <span>A</span>
-                    <span>A</span>
-                    <span>A</span>
-                    <span>A</span>
-                    <span>A</span>
+                <!-- Social -->
+                <div class="social">
+                    <!-- Sottotitolo -->
+                    <h4>Trovaci anche su</h4>
+                    <!-- Lista -->
+                    <ul>
+                        <li><i class="fa-brands fa-square-twitter"></i></li>
+                        <li><i class="fa-brands fa-square-facebook"></i></li>
+                        <li><i class="fa-brands fa-square-instagram"></i></li>
+                        <li><i class="fa-brands fa-square-pinterest"></i></li>
+                        <li><i class="fa-brands fa-square-youtube"></i></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
 </html>

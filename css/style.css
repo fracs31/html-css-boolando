@@ -1,177 +1,223 @@
-/* Regole di reset */
+/* Regole generali */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ul, ol, menu {
+    list-style-type: none;
+}
+
 .container {
-    max-width: 1000px;
+    max-width: 1390px;
     margin: 0px auto;
 }
 
-/* ***** Header ***** */
-header {
-    height: 80px;
-    background-color: #ff6d00;
+/* Header */
+.main-header {
+    background-color: #FF6900;
     color: white;
     position: fixed;
     width: 100%;
     z-index: 999;
 }
 
-header .row {
-    height: 80px;
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header ul {
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    padding-right: 10px;
-}
-
-header a {
-    text-decoration: none;
-    color: currentColor;
-}
-
-header img {
-    height: 30px;
-}
-
-/* ***** Main ***** */
-
-main {
-    padding: 100px 0px 30px 0px;
-}
-
-main .row {
+/* Lista nella navbar */
+.navbar ul {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
+/* Elemento della lista */
+.navbar li {
+    padding: 0px 10px;
+}
+
+/* Immagine usata come logo */
+.logo img {
+    width: 180px;
+    height: 40px;
+}
+
+/* Main */
+.main-content {
+    padding-top: 160px;
+    padding-bottom: 50px;
+}
+
+/* Riga */
+.row {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+/* Colonna */
+.col {
+    flex-basis: calc(100% / (12 / 4));
+}
+
+/* Carta */
 .card {
-    height: 500px;
-    width: 300px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 700px;
 }
 
-.img {
+/* Corpo della carta */
+.card-body {
     width: 100%;
-    height: 85%;
+    height: 90%;
     position: relative;
 }
 
-.img img {
+/* Contenitore immagini della carta */
+.images {
     width: 100%;
     height: 100%;
+}
+
+/* Immagine della carta */
+.images img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Immagine dietro */
+.back-img {
     position: absolute;
     top: 0px;
     left: 0px;
-    opacity: 1;
-}
-
-.hover-img {
-    z-index: -1;
-}
-
-.not-hover-img:hover {
     opacity: 0;
 }
 
-.favorite {
+/* Immagine dietro in hover */
+.back-img:hover {
+    opacity: 1;
+}
+
+/* Cuore */
+.heart {
     width: 50px;
-    height: 50px;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-    line-height: 50px;
-    text-align: center;
+    height: 55px;
     background-color: white;
-}
-
-.favorite span {
-    font-size: 36px;
-}
-
-.info {
-    height: 20px;
-    width: 100%;
     position: absolute;
-    top: 90%;
-    color: white;
-    font-size: 14px;
+    top: 10px;
+    right: 0px;
+    text-align: center;
 }
 
-.discount {
-    height: 100%;
-    display: inline-block;
-    background-color: red;
-    padding: 0px 5px;
+/* Span con il simbolo del cuore */
+.heart span {
+    font-size: 38px;
+    line-height: 55px;
 }
 
-.sustain {
-    height: 100%;
-    display: inline-block;
-    background-color: green;
-    padding: 0px 5px;
-}
-
-.desc {
+/* Parte finale della carta */
+.card-footer {
     width: 100%;
-    height: 15%;
+    height: 10%;
 }
 
-.brand span {
-    font-size: 12px;
+/* Informazioni prodotto */
+.info {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    left: 0px;
+    bottom: 50px;
 }
 
-.name span {
-    font-weight: bold;
+/* Info box */
+.info-box {
+    color: white;
+    width: max-content;
+    padding: 5px 10px;
+}
+
+/* Span dell'info box */
+.info-box p {
     font-size: 14px;
 }
 
-.price span {
-    font-size: 12px;
+/* Colore rosso info box */
+.red {
+    background-color: red;
 }
 
-.new-price {
+/* Colore verde info box */
+.green {
+    background-color: green;
+}
+
+/* Paragrafo brand */
+.brand p {
+    font-size: 14px;
+}
+
+/* Paragrafo titolo */
+.title p {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Prezzo paragrafo */
+.price p {
+    display: inline;
+    font-size: 14px;
+}
+
+/* Prezzo attuale */
+.actual-price {
     color: red;
+    font-weight: bold;
 }
 
+/* Prezzo vecchio */
 .old-price {
     text-decoration: line-through;
 }
 
-/* ***** Footer ***** */
-footer {
+/* Footer */
+.page-footer {
     background-color: black;
-    height: 100px;
+    color: white;
     padding: 20px 0px;
 }
 
-footer .row {
-    color: white;
+/* Informazioni contenute nel footer */
+.footer-info {
     display: flex;
     justify-content: space-between;
 }
 
-footer h2 {
-    font-size: 16px;
+/* Sottotitolo azienda */
+.company h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
 }
 
-footer span {
-    font-size: 14px;
-    padding-right: 5px;
+/* Liste azienda e social */
+.company ul, .social ul {
+    display: flex;
+    gap: 10px;
+}
+
+/* Elemento lista contenuto nei social */
+.social li {
+    font-size: 22px;
+}
+
+/* Sottotitolo dei social */
+.social h4 {
+    padding-bottom: 10px;
 }
